@@ -33,7 +33,7 @@ In /usr/local/bin directory we can create a symbolic link to the loki command:
 sudo ln -s /opt/loki/loki /usr/local/bin/loki
 ```
 
-Now loki command is available for all users as a system-wide command.
+Now loki command is available for all users as a system-wide command.\
 Download configuration file for Loki:
 ```
 sudo wget -qO /opt/loki/loki-local-config.yaml "https://raw.githubusercontent.com/grafana/loki/v${LOKI_VERSION}/cmd/loki/loki-local-config.yaml"
