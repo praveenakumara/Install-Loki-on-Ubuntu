@@ -1,4 +1,4 @@
-# Install Loki on Ubuntu 22.04
+# Install Loki on Ubuntu 22.04 LTS
 
 ## Install Loki
 
