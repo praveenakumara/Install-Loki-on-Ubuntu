@@ -10,7 +10,7 @@ LOKI_VERSION=$(curl -s "https://api.github.com/repos/grafana/loki/releases/lates
 
 Create a new directory to store Loki binary and configuration file.
 ```
-sudo mkdir /opt/loki
+sudo mkdir `/opt/loki`
 ```
 
 Download archive from releases page of the Loki repository.
@@ -28,7 +28,7 @@ Set execute permission for file:
 sudo chmod a+x /opt/loki/loki
 ```
 
-In /usr/local/bin directory we can create a symbolic link to the loki command:
+In `/usr/local/bin` directory we can create a symbolic link to the loki command:
 ```
 sudo ln -s /opt/loki/loki /usr/local/bin/loki
 ```
@@ -44,7 +44,7 @@ To verify installation, we can check Loki version:
 loki -version
 ```
 
-##Run Loki as a service
+## Run Loki as a service
 
 We can configure systemd for running Loki as a service. Create a systemd unit file:
 ```
@@ -86,7 +86,7 @@ To enable Loki to start on boot, run the following command:
 sudo systemctl enable loki
 ```
 
-##Uninstall Loki
+## Uninstall Loki
 To completely remove the Loki, stop the service and remove a systemd unit file.
 ```
 sudo service loki stop
