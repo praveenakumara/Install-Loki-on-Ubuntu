@@ -10,7 +10,7 @@ LOKI_VERSION=$(curl -s "https://api.github.com/repos/grafana/loki/releases/lates
 
 Create a new directory to store Loki binary and configuration file.
 ```
-sudo mkdir `/opt/loki`
+sudo mkdir /opt/loki
 ```
 
 Download archive from releases page of the Loki repository.
